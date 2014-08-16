@@ -1,0 +1,72 @@
+<div class="jumbotron">
+    <h1>PHP Boleto <span class="zf-green">ZF2</span> Module</h1>
+    <p>Este projeto tem a intenção de criar uma versão alternativa do BoletoPHP, aplicada ao Zend Framework 2.</p>
+    <p>Todas as funções foram convertidas em classes e métodos do PHP para um melhor reaproveitamento dos códigos 
+        desenvolvidos. Além disso, todas as views dos boletos foram convertidas para UTF-8.</p>
+    <p>Abaixo a demonstração dos boletos que já foram convertidos:</p>
+    <p><br />
+        <a class="btn btn-success btn-lg btn-demo" href="/boleto/bradesco/demo">Bradesco</a>
+        <a class="btn btn-success btn-lg btn-demo" href="/boleto/bb/demo">Banco do Brasil</a>
+        <a class="btn btn-success btn-lg btn-demo" href="/boleto/caixa-sigcb/demo">Caixa</a>
+        <a class="btn btn-success btn-lg btn-demo" href="/boleto/itau/demo">Itaú</a>
+    </p>
+    <p style="text-align: center"><br />
+        <a href="https://github.com/JotJunior/PHP-Boleto-ZF2">Ir para o repositório no GitHub</a>
+    </p>
+</div>
+
+<div class="row">
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Requisitos</h3>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li><a href="http:/php.net">PHP 5.4 ou superior</a></li>
+                    <li><a href="http://framework.zend.com">Zend Framewor 2.2.x</a></li>
+                    <li><a href="http://modules.zendframework.com/raykolbe/DOMPDFModule">DOMPDFModule</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Doações</h3>
+            </div>
+            <div class="panel-body">
+                <p>Me ajute a continuar com a ferramenta
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                           ">
+                    <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira mais fácil e segura de efetuar pagamentos online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
+                </form>
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Últimas implementações</h3>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li>Boleto do Itaú</li>
+                    <li>Boleto da Caixa - Sigcb</li>
+                    <li>Uso do Zend\Barcode para gerar o Código de Barras</li>
+                    <li>Melhoria nas classes dos boletos</li>
+                </ul>
+                    
+            </div>
+        </div>
+    </div>
+</div>
+
